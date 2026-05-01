@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgba(0, 231, 42, 0.637);
+    color: #2f3e1f;
+}
+
+/* Responsive header */
+header {
+    background-color: rgba(0, 231, 42, 0.637);
+    padding: clamp(10px, 3vh, 30px) clamp(10px, 4vw, 40px);
+    text-align: center;
+    box-shadow: 0 0.3vh 1vh rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive title */
+h1 {
+    margin: 0;
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    color: #000000;
+    text-align: center;
+    line-height: 1.3;
+}
+
+/* Small devices */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.1rem;
+    }
+}
+
+/* Large screens */
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+}
